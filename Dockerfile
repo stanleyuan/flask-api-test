@@ -23,3 +23,5 @@ RUN pip3 install pipenv && pipenv install --system --deploy
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY . /code/
+
+CMD python3 /code/item_store/app.py
